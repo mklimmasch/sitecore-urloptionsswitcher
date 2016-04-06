@@ -243,3 +243,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/UrlOptionsSwitcher/sitecore/Sitecore.Kernel.xml
+/UrlOptionsSwitcher/sitecore/Sitecore.Kernel.dll
