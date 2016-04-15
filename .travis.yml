@@ -1,0 +1,8 @@
+language: csharp
+solution: UrlOptionsSwitcher.sln
+install:
+  - nuget restore UrlOptionsSwitcher.sln
+  - nuget install NUnit.Runners -Version 3.2.0 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release UrlOptionsSwitcher.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.2.0/tools/nunit3-console.exe ./UrlOptionsSwitcher.Test/bin/Release/UrlOptionsSwitcher.Test.dll
